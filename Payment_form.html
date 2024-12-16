@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<form action="">
+    <h1 style="color: aquamarine;">Payment Form</h1>
+    <marquee h1 style="color: tomato;">Admin</marquee>
+    <p style="color: aqua;">Required Fields are followed by *</p>
+    <h2>Contact Information</h2>
+
+    <p>Name: *<input type="text" name="name" id="name" required> </p>
+    <fieldset>
+        <legend>Gender</legend>
+        <p>
+            Male<input type="radio" name="gender" id="Male" required>
+            Female <input type="radio" name="gender" id="Female">
+        </p>
+        <p>
+            Amit <input type="checkbox" name="amit" id="amit">
+            Ankit <input type="checkbox" name="ankit" id="ankit">
+            Aditya <input type="checkbox" name="aditya" id="aditya">
+        </p>
+    </fieldset>
+    <p>
+        Address <textarea name="Address" id="Address" cols="100" rows="7"></textarea>
+    </p>
+    <p> Email: *<input type="text" name="Email" id="Email" required></p>
+    <p> Pincode: *<input type="number" name="Pincode" id="Pincode" required></p>
+
+    <h1> Payment Information</h1>
+    <p> Card Type:
+        <select name="card_type" id="card_type">
+            <option value="">--Select a Card Type--</option>
+            <option value="visa">Visa</option>
+            <option value="rupay"> Rupay </option>
+            <option value="mastercard">Mastercard</option>
+            <option value="mastercard">Credit Card</option>
+            >
+        </select>
+    </p>
+
+    Card number: *<input type="number" name="cardNumber" id="cardNumber" required>
+    </p>
+    <p>Expiration Date: <input type="date" name="expiry" id="expiry"></p>
+    <p> Cvv: <input type="password" name="cvv" id="cvv"></p>
+    <input type="submit" value="Pay Now"></input>
+    
+
+</form>
+</body>
+
+</html>
